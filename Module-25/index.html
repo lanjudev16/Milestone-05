@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body {
+            color: tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Well come to dom series</h1>
+    </header>
+    <main>
+        <h1>My Awesome Dom de baba</h1>
+        <ul>
+            <li>Jalali set</li>
+            <li>Shafayet</li>
+            <li>borja jak</li>
+        </ul>
+    </main>
+
+    <script src="./js/dom.js"></script>
+    <script>
+        let liCollection = document.getElementsByTagName('li');
+        let hCollection = document.getElementsByTagName('h1');
+        // console.log(liCollection)
+        for (li of liCollection) {
+            console.log(li.innerText)
+
+        }
+        for (h1 of hCollection) {
+            console.log(h1.innerText)
+        }
+    </script>
+</body>
+
+</html>
